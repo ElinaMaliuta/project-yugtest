@@ -8,17 +8,21 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="fonts.css">
 
-	<title>ПІВДЕНТЕСТ</title>
+	<title>Головна | ПІВДЕНТЕСТ</title>
 </head>
 <body>
 		<header>
 
-		<div class="header m-b-60">
+		<div class="header">
 			<div class="header__logo title">
 				<div class="title__img"><img src="./images/logo-no-fone.webp" alt="logo"></div>
 				<div class="title__text"><h1>ПІВДЕНТЕСТ</h1></div>
 			</div>
 			<div class="header__menu">
+				<span class="menu-burg">
+					<span class="menu-burg__burger"><img src="./icons/menu-blue.svg" alt="icon-burger-menu"></span>
+					<span class="menu-burg__close"><img src="./icons/close-blue.svg" alt="icon-close"></span>
+				</span>
 				<nav class="nav">
 					<a href="#" class="underline-animation">Про компанію</a>
 					<a href="#" class="underline-animation">Послуги</a>
@@ -29,7 +33,7 @@
 		</div>
 	</header>
 
-	<main>
+	<main class="main">
 		<div class="section">
 			<div class="section__item"><a href="#">ПРОДУКЦІЯ</a></div>
 			<div class="section__item"><a href="#">СИСТЕМА</a></div>
@@ -48,25 +52,30 @@
 				</div>
 			</div>
 		</div>
-		</main>
-		<footer>
-			<div class="wrapper-for-section">
-				<div class="section-write-to-us">
-					<div class="section-write-to-us__item">Напишіть нам, і ми зв'яжемось з вами в самий найближчий час</div>
-					<div class="section-write-to-us__item">
-						<input id="name" type="text" name="name" placeholder="Ім'я" required class="input-text">
-					</div>
-					<div class="section-write-to-us__item">
-						<input id="email" type="text" name="email" placeholder="Email" required class="input-text">
-					</div>
-					<div class="section-write-to-us__item">
-						<input id="subject" type="text" name="email" placeholder="Тема" required class="input-text">
-					</div>
-					<div class="section-write-to-us__item">
-						<textarea id="message" name="comment" placeholder="Повідомлення" cols="30" rows="7" class="message__textarea"></textarea>
-					</div>
+
+		<div class="wrapper-for-section">
+			<div class="section-write-to-us">
+				<div class="section-write-to-us__item">Напишіть нам, і ми зв'яжемось з вами в самий найближчий час</div>
+				<div class="section-write-to-us__item">
+					<input id="name" type="text" name="name" placeholder="Ім'я" required class="input-text">
+				</div>
+				<div class="section-write-to-us__item">
+					<input id="email" type="text" name="email" placeholder="Email" required class="input-text">
+				</div>
+				<div class="section-write-to-us__item">
+					<input id="subject" type="text" name="email" placeholder="Тема" required class="input-text">
+				</div>
+				<div class="section-write-to-us__item">
+					<textarea id="message" name="comment" placeholder="Повідомлення" cols="30" rows="7" class="message__textarea"></textarea>
 				</div>
 			</div>
+		</div>
+		</main>
+		<footer>
+			<div>Всі права захищено.</div>
 		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="/js/script.js"></script>
 </body>
 </html>
