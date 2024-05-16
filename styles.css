@@ -194,6 +194,7 @@ footer{
 }
 .section-write-to-us__item:nth-child(1){
 	padding-left: 30px;
+	font-size: 20px;
 }
 .section-write-to-us__item:nth-child(2),
 .section-write-to-us__item:nth-child(3),
