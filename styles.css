@@ -1,4 +1,4 @@
-body {
+html, body {
 	font-family: OpenSans, Archivo, Roboto, Nunito, sans-serif;
 	font-weight: 300;
 	color: #287ee1;
@@ -7,10 +7,14 @@ body {
 	padding: 0;
 	background-color: #f9f8f8;
 }
+header, main, .footer{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
 body a{
 	text-decoration: none;
 }
-
 main.lock, footer.lock {
 	pointer-events: none;
 	user-select: none;
@@ -30,7 +34,6 @@ main.lock, footer.lock {
 	margin-bottom: 60px;
 }
 .header__menu{
-	width: 100%;
 	padding-right: 40px;
 }
 .title{
@@ -47,8 +50,10 @@ main.lock, footer.lock {
 	margin: 0;
 }
 nav {
+	padding-left: 2rem;
 	display: flex;
-	justify-content: space-around;
+	justify-content:flex-start;
+	column-gap: 7rem;
 }
 nav a {
 	text-decoration: none;
@@ -61,7 +66,6 @@ nav a {
 .nav .underline-animation {
 	display: inline-block;
 	position: relative;
-	/* color: #287ee1; */
 	text-decoration: none;
  }
  .nav .underline-animation::after {
@@ -86,8 +90,9 @@ nav a {
 }
 .section{
 	margin: 0 auto 60px auto;
-	width: 60%;
-	padding: 40px;
+	width: 70%;
+	padding-top: 40px;
+	padding-bottom: 40px;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -117,10 +122,7 @@ nav a {
 
 .section-contact-us{
 	color: #d88144;
-
 	margin: 0 auto 60px auto;
-	width: 60%;
-
 	display: flex;
 	flex-wrap: wrap;
 	column-gap:100px;
@@ -160,12 +162,13 @@ nav a {
 	color: #287ee1;
 }
 
-.wrapper-for-section{
+footer{
 	background-color: #00457E;
+	padding-bottom: 0;
 }
 .section-write-to-us{
 	margin: 0 auto 0 auto;
-	width: 60%;
+	width: 70%;
 	padding: 40px;
 
 	color: white;
@@ -187,20 +190,21 @@ nav a {
 
 .input-text, .message__textarea{
 	font-size: 16px;
-	margin: 0px 10px;
+	margin: 0 10px;
+}
+.section-write-to-us__item:nth-child(1){
+	padding-left: 30px;
+}
+.section-write-to-us__item:nth-child(2),
+.section-write-to-us__item:nth-child(3),
+.section-write-to-us__item:nth-child(4){
+	text-align: right;
+	margin: 0 10px;
 }
 
-footer {
-	border-color: #00457E;
-	color: #00457E;
-	opacity: 0;
-	text-align: center;
-	position: fixed;
-	width: 100%;
-	bottom: 0;
-}
 
 
+/* 
 
 @media (max-width: 1280px){
 	.section{
@@ -373,4 +377,4 @@ footer {
 	}
 
 
-}
+} */
